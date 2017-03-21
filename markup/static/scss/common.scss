@@ -162,6 +162,10 @@ $color_tab_active: #e7435d;
 			text-decoration: none;
 			color: $color_text;
 			font-family: $font_PT_Sans_Regular;
+
+			&:hover{
+				color: $color_tab_active;
+			}
 		}
 	}
 }
