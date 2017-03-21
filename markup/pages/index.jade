@@ -1,0 +1,93 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/example/example
+    include ../components/footer/footer
+
+    head
+        +head(head.defaults)
+    body
+        main.home
+            include ../components/svg.svg
+            section.top-header
+                .top-header__container.clearfix
+                    .top-header__left
+                        .language-name
+                            a.link.link--language-name(href="#") USA site
+                            a.link.link--language-name(href="#") Deutsch site
+                        .language-switch
+                            p.language-switch__name Россия:
+                                a.link.link--language-switch(href="#") Switch to english
+                    .top-header__right
+                        .scoreboard
+                            svg.clock-icon(viewBox="0 0 20 20")
+                                use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#clock-icon")
+                            a.link.link--scoreboard(href="#") Онлайн-табло
+                        .login-popup
+                            a.link.link--login-popup#open-popun(href="#") Вход и регистрация
+            section.header
+                .header__container.clearfix
+                    .header__logo
+                        a.header__logo_link(href="/")
+                            img(src="static/img/general/logo.png", alt="Logo")
+                    .header__tabs
+                        nav.navigation
+                            ul.navigation__list
+                                li.navigation__list_item
+                                    a(href="#" title="tab1") Возможности
+                                li.navigation__list_item
+                                    a(href="#" title="tab2") Информация
+                                li.navigation__list_item
+                                    a(href="#" title="tab3") Привелегии
+                    .header__search
+                        form.search(action="" method="post")
+                            input.search__input(type="search" name="" placeholder="поиск по сайту")
+                            label
+                                input(type="submit")
+                                svg.search-icon(viewBox="0 0 19 19")
+                                    use(xmlns:xlink="http://www.w3.org/1999/xlink",xlink:href="#search-icon")
+            section.mobile-menu
+                nav.navigation
+                    ul.navigation__list
+                        li.navigation__list_item
+                            a(href="#" title="tab1") Возможности
+                        li.navigation__list_item
+                            a(href="#" title="tab2") Информация
+                        li.navigation__list_item
+                            a(href="#" title="tab3") Привелегии
+            section.tabs
+                .tabs__container
+                    #tab1.tabs-content
+                        .slideshow.owl-carousel
+                            .slideshow__item(style="background-image: url('static/img/general/slide.png');")
+                                .slideshow__text
+                                    p.slideshow__text_first-title Открывайте мир
+                                    p.slideshow__text_second-title вместе с 
+                                        span.plane-icon Трансаэро
+                                    p.slideshow__text_subtext Почувствуйте комфорт современного Boeing 747-300
+                            .slideshow__item(style="background-image: url('static/img/general/slide.png');")
+                                .slideshow__text
+                                    p.slideshow__text_first-title Открывайте мир
+                                    p.slideshow__text_second-title вместе с 
+                                        span.plane-icon Трансаэро
+                                    p.slideshow__text_subtext Почувствуйте комфорт современного Boeing 747-300
+                    #tab2.tabs-content
+                        p.test-content 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet cumque veritatis. Quae tempora quis optio eum rerum consectetur quod, molestiae magnam placeat, id consequatur possimus voluptatem illum a. Ab.
+                    #tab3.tabs-content
+                        p.test-content 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eveniet cumque veritatis. Quae tempora quis optio eum rerum consectetur quod, molestiae magnam placeat, id consequatur possimus voluptatem illum a. Ab.
+        #popUp.popup
+            .popup-content
+                a(href="#").close
+                form(method="post" action="#")
+                    label(for="login__name") Почта:
+                    input#login__email(type="text" name="login")
+                    span#valid
+                    label(for="login__password") Пароль:
+                    input#login__password(type="password" name="password")
+                    span#valid-pass
+                    button.btn.btn--submit(type="submit" value="Отправить") Отправить
+
+
+
+        include ../components/footer/footer-script

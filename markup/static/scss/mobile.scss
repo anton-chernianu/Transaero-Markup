@@ -1,0 +1,174 @@
+@media screen and (max-width: 940px) {
+	.top-header__container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.navigation__list_item {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.header__tabs {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.header {
+		border: none;
+	}
+
+	#navigation__list_item--active {
+		border-left: none;
+		border-right: none;
+	}
+
+	.slideshow .owl-next {
+		right: 5px;
+	}
+
+	.slideshow .owl-prev {
+		left: 5px;
+	}
+
+	.slideshow__text {
+		padding-left: 20px;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+
+	// .plane-icon:after {
+	// 	display: none;
+	// }
+}
+
+@media screen and (max-width: 780px) {
+	.slideshow__text {
+	    max-width: 660px;
+	}
+
+	p.slideshow__text_first-title {
+		font-size: 38px;
+	}
+
+	p.slideshow__text_second-title {
+	    font-size: 70px;
+	}
+
+	.navigation__list_item {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.slideshow__item {
+		height: 340px; 
+	}
+
+	.slideshow__text {
+		max-width: 600px;
+		padding-top: 120px;
+	}
+
+	p.slideshow__text_first-title {
+	    font-size: 30px;
+	}
+
+	p.slideshow__text_second-title {
+    	font-size: 56px;
+	}
+
+	.navigation__list_item {
+	    padding-left: 4px;
+	    padding-right: 4px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.slideshow .owl-prev, .slideshow .owl-next {
+		display: none;
+	}
+
+	.top-header__left {
+		display: block;
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.top-header__right {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header__logo {
+		width: 50%;
+	}
+
+	.header__tabs {
+		display: none;
+	}
+
+	.header__search{
+		width: 50%;
+	}
+
+	.mobile-menu{
+		display: block;
+		padding-top: 10px;
+	}
+
+	p.slideshow__text_first-title {
+	    margin-bottom: -12px;
+	}
+
+	p.slideshow__text_second-title {
+		font-size: 32px;
+	}
+
+	.plane-icon:after{
+		top: 0;
+		width: 23px;
+		height: 23px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.header__logo {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	.header__search {
+		width: 100%;
+		float: none;
+		margin-left: 0;
+		padding-left: 20px;
+	}
+
+	.mobile-menu {
+		padding-top: 20px;
+	}
+
+	.slideshow__item {
+    	height: 245px;
+	}
+
+	.slideshow__text {
+		padding-top: 50px;
+	}
+
+	.plane-icon {
+		display: none;
+	}
+
+	.close:after {
+		right: -5px;
+    	top: -42px;
+	}
+
+}
